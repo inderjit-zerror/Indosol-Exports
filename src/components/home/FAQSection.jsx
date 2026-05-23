@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { FaArrowRight } from "react-icons/fa6";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -157,7 +158,8 @@ export default function FAQSection() {
             <span className="text-[1rem] font-semibold text-[#394150]">
               Get In Touch
             </span>
-            <div className="w-[2rem] h-[2rem] rounded-full bg-[#1450d2] flex items-center justify-center text-white text-[1rem]">
+            <div className="w-[2rem] h-[2rem] rounded-full bg-[#1450d2] flex items-center justify-center text-white text-[0.9rem]">
+              <FaArrowRight/>
             </div>
           </button>
         </div>
@@ -179,7 +181,7 @@ export default function FAQSection() {
               {/* Animated Top Blue Border */}
               <div className="absolute top-0 left-0 w-full h-[0.18rem]">
                 <div
-                  className={`h-full bg-[#1450d2] transition-all duration-500 ease-in-out ${
+                  className={`h-full BgBlue transition-all duration-500 ease-in-out ${
                     activeIndex === index ? "w-full" : "w-0"
                   }`}
                 />
@@ -192,7 +194,7 @@ export default function FAQSection() {
               >
                 <h3
                   className={`text-[1.5rem] font-semibold duration-300 ${
-                    activeIndex === index ? "text-[#1450d2]" : "text-[#394150]"
+                    activeIndex === index ? "TextBlue" : "TextDarkGray"
                   }`}
                 >
                   {item.question}

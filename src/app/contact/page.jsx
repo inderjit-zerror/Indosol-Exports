@@ -1,9 +1,10 @@
+import ContactSection from "@/components/contact/ContactSection";
 import { createPageMetadata } from "@/lib/seo";
 
 const ContactPage = () => {
   return (
     <>
-      Contact
+      <ContactSection />
     </>
   );
 };

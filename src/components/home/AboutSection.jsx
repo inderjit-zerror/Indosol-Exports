@@ -81,7 +81,7 @@ export default function AboutSection() {
             className="w-full max-w-[52rem] text-center"
             style={{ opacity: 0 }}
           >
-            <h2 className="text-[1.35rem] leading-[2.4rem] text-[#6B7280] font-normal">
+            <h2 className=" text-[#6B7280] font-normal">
               Indosol Exports is an India-based pharmaceutical export company
               specializing in Active{" "}
               <span className="italic TextBlue">

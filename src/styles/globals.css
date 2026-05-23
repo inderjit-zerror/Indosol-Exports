@@ -50,6 +50,12 @@ button {
 .TextBlue{
   color: #0D40A2;
 }
+.TextDarkGray{
+  color:#374151;
+}
+.TextLiteGray{
+  color:#6B7280;
+}
 .BgBlue{
   background-color: #0D40A2;
 }
@@ -58,13 +64,13 @@ button {
 /* ================================ */
 
 h1{
-  font-size: 4.5vw;
-  line-height: 4.6vw;
+  font-size: 3.5vw;
+  line-height: 4vw;
 }
 
 p{
-  font-size: 1.1rem;
-  line-height: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.4rem;
 }
 
 h2{

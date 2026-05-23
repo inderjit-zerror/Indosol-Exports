@@ -1,10 +1,17 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
+import { FaArrowRight } from "react-icons/fa6";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const headerRef = useRef(null);
+  const buttonRef = useRef(null);
+  const circleRef = useRef(null);
+
+  const pathName = usePathname();
 
   useEffect(() => {
     const header = headerRef.current;
@@ -21,19 +28,15 @@ export default function Header() {
           color: "#111827",
           duration: 0.3,
         });
+
         gsap.to(".NavBTBN", {
           backgroundColor: "#0D40A2",
-          duration: 0.3,
-        });
-        gsap.to(".NavBTBN", {
           color: "#ffffff",
           duration: 0.3,
         });
+
         gsap.to(".BTNinnerCrl", {
           backgroundColor: "#ffffff",
-          duration: 0.3,
-        });
-        gsap.to(".BTNinnerCrl", {
           color: "#0D40A2",
           duration: 0.3,
         });
@@ -48,19 +51,15 @@ export default function Header() {
           color: "#ffffff",
           duration: 0.3,
         });
-         gsap.to(".NavBTBN", {
-          backgroundColor: "#ffffff",
-          duration: 0.3,
-        });
+
         gsap.to(".NavBTBN", {
+          backgroundColor: "#ffffff",
           color: "#0D40A2",
           duration: 0.3,
         });
+
         gsap.to(".BTNinnerCrl", {
           backgroundColor: "#0D40A2",
-          duration: 0.3,
-        });
-        gsap.to(".BTNinnerCrl", {
           color: "#ffffff",
           duration: 0.3,
         });
@@ -69,10 +68,67 @@ export default function Header() {
 
     window.addEventListener("scroll", handleScroll);
 
+    // Button Hover Animation
+    const button = buttonRef.current;
+    const circle = circleRef.current;
+
+    const handleMouseEnter = () => {
+      gsap.to(button, {
+        scale: 1.03,
+        duration: 0.3,
+        ease: "power2.out",
+      });
+
+      gsap.to(circle, {
+        // x: "0.3rem",
+        rotate: 45,
+        scale: 1,
+        duration: 0.4,
+        ease: "power3.out",
+      });
+    };
+
+    const handleMouseLeave = () => {
+      gsap.to(button, {
+        scale: 1,
+        duration: 0.3,
+        ease: "power2.out",
+      });
+
+      gsap.to(circle, {
+        x: 0,
+        rotate: 0,
+        scale: 1,
+        duration: 0.4,
+        ease: "power3.out",
+      });
+    };
+
+    button.addEventListener("mouseenter", handleMouseEnter);
+    button.addEventListener("mouseleave", handleMouseLeave);
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
+
+      button.removeEventListener("mouseenter", handleMouseEnter);
+      button.removeEventListener("mouseleave", handleMouseLeave);
     };
   }, []);
+
+
+  useLayoutEffect(()=>{
+    if(pathName == "/contact"){
+      gsap.set('.txt', {
+        color:'#0D40A2'
+      });
+    }
+    else{
+      gsap.set('.txt', {
+        color:'#ffffff'
+      });
+    }
+      
+  })
 
   return (
     <header
@@ -80,7 +136,7 @@ export default function Header() {
       className="w-full fixed top-0 left-0 z-[99]"
     >
       <div className="w-[92vw] max-w-[90rem] mx-auto h-[5.5rem] flex items-center justify-between">
-        
+
         {/* Logo */}
         <div className="flex items-center">
           <img
@@ -94,35 +150,35 @@ export default function Header() {
         <nav className="hidden md:flex items-center gap-[3rem]">
           <a
             href="/"
-            className="navLink text-[1.1rem] leading-[1.1rem] font-medium text-white"
+            className="navLink text-[1.1rem] leading-[1.1rem] txt font-medium text-white"
           >
             Home
           </a>
 
           <a
-            href="/"
-            className="navLink text-[1.1rem] leading-[1.1rem] font-medium text-white"
+            href="/about"
+            className="navLink text-[1.1rem] leading-[1.1rem] txt font-medium text-white"
           >
             About us
           </a>
 
           <a
             href="/"
-            className="navLink text-[1.1rem] leading-[1.1rem] font-medium text-white"
+            className="navLink text-[1.1rem] leading-[1.1rem] txt font-medium text-white"
           >
             Products
           </a>
 
           <a
             href="/"
-            className="navLink text-[1.1rem] leading-[1.1rem] font-medium text-white"
+            className="navLink text-[1.1rem] leading-[1.1rem] txt font-medium text-white"
           >
             Imports
           </a>
 
           <a
             href="/"
-            className="navLink text-[1.1rem] leading-[1.1rem] font-medium text-white"
+            className="navLink text-[1.1rem] leading-[1.1rem] txt font-medium text-white"
           >
             Exports
           </a>
@@ -130,26 +186,21 @@ export default function Header() {
 
         {/* Button */}
         <div className="flex items-center">
-          <button className="flex items-center gap-[0.8rem] NavBTBN bg-white TextBlue font-semibold rounded-full pl-[1rem] pr-[0.5rem] py-[0.5rem]">
+          <Link href="/contact" > 
+          <button
+            ref={buttonRef}
+            className="flex items-center gap-[0.8rem] NavBTBN bg-white text-[#0D40A2] font-semibold rounded-full pl-[1rem] pr-[0.3rem] py-[0.3rem] overflow-hidden"
+          >
             Contact Us
 
-            <span className="w-[2rem] h-[2rem] rounded-full BgBlue BTNinnerCrl flex items-center justify-center text-white">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="2"
-                stroke="currentColor"
-                className="w-[1rem] h-[1rem] "
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                />
-              </svg>
+            <span
+              ref={circleRef}
+              className="w-[2rem] h-[2rem] rounded-full BTNinnerCrl bg-[#0D40A2] flex items-center justify-center text-white"
+            >
+              <FaArrowRight />
             </span>
           </button>
+          </Link>
         </div>
       </div>
     </header>

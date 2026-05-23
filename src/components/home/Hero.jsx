@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa6";
 
 export default function Hero() {
   return (
@@ -43,11 +44,11 @@ export default function Hero() {
         {/* CTA Button */}
         <Link
           href="/products"
-          className="inline-flex items-center gap-3 self-start rounded-full border border-white  font-semibold transition-all duration-300 bg-white text-blue-900  py-[0.8rem] pl-[1.5rem] pr-[1rem]"
+          className="inline-flex items-center gap-3 self-start rounded-full border border-white  font-semibold transition-all duration-300 bg-white text-blue-900  py-[0.5rem] pl-[1.5rem] pr-[0.7rem]"
         >
           <p> Explore All Products </p>
           <span className="inline-flex items-center justify-center rounded-full bg-blue-900 text-white transition-all duration-300 w-[3rem] h-[3rem] shrink-0">
-            
+            <FaArrowRight/>
           </span>
         </Link>
       </div>

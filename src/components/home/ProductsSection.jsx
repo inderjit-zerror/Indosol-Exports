@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { FaArrowRight } from "react-icons/fa6";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -165,12 +166,12 @@ export default function ProductsSection() {
 
           <button
             ref={btnRef}
-            className="border border-white/20 rounded-full px-[1.6rem] py-[0.9rem] flex items-center gap-[0.8rem] text-white text-[1.4rem] duration-300 hover:bg-white hover:text-[#06256F]"
+            className="border border-white/20 rounded-full px-[1rem] py-[0.5rem] flex items-center gap-[0.8rem] text-white text-[1.4rem] duration-300 hover:bg-white hover:text-[#06256F]"
             style={{ opacity: 0 }}
           >
             <p>Explore All Products</p>
-            <span className="w-[2rem] h-[2rem] rounded-full bg-white text-[#06256F] flex items-center justify-center text-[1.2rem]">
-              {/* Arrow-Logo */}
+            <span className="w-[2rem] h-[2rem] rounded-full bg-white text-[#06256F] flex items-center justify-center text-[1rem]">
+              <FaArrowRight/>
             </span>
           </button>
         </div>
@@ -222,8 +223,8 @@ export default function ProductsSection() {
                     alt={item.title}
                     className="w-full h-full object-cover duration-500 group-hover:scale-105"
                   />
-                  <button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[4.5rem] h-[4.5rem] rounded-full bg-white text-[#06256F] text-[1.8rem] flex items-center justify-center duration-300 hover:scale-110">
-                    {/* Arrow Logo */}
+                  <button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[4.5rem] h-[4.5rem] rounded-full bg-white text-[#06256F] text-[1.5rem] flex items-center justify-center duration-300 hover:scale-110">
+                    <FaArrowRight/>
                   </button>
                 </div>
               </div>
