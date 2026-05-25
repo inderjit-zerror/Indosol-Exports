@@ -177,7 +177,7 @@ export default function Header() {
           </a>
 
           <a
-            href="/"
+            href="/exports"
             className="navLink text-[1.1rem] leading-[1.1rem] txt font-medium text-white"
           >
             Exports

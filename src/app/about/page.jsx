@@ -1,5 +1,6 @@
 import AboutHero from "@/components/about/AboutHero";
 import AboutSection from "@/components/about/AboutSection";
+import CertificationsSection from "@/components/about/CertificationsSection";
 import MissionVisionSection from "@/components/about/MissionVisionSection";
 import ServicesSection from "@/components/about/ServicesSection";
 import StatsSection from "@/components/about/StatsSection";
@@ -15,6 +16,7 @@ const AboutPage = () => {
     <MissionVisionSection/>
     <ServicesSection />
     <LeadershipSection />
+    <CertificationsSection />
     </div>
   );
 };
