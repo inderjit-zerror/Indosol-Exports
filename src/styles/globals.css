@@ -64,16 +64,21 @@ button {
 /* ================================ */
 
 h1{
-  font-size: 3.5vw;
-  line-height: 4vw;
+  font-size: 3vw;
+  line-height: 3.5vw;
 }
 
 p{
   font-size: 1rem;
-  line-height: 1.4rem;
+  line-height: 1.2rem;
 }
 
 h2{
-  font-size: 1.7rem;
-  line-height: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+}
+
+h3{
+  font-size: 1.4rem;
+  line-height: 1.9rem;
 }

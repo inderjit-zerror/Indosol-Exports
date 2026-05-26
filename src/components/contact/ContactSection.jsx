@@ -127,14 +127,14 @@ export default function ContactSection() {
         {/* Top Content */}
         <div className="contact-top w-full border-b border-[#dddddd] pb-[4rem]">
           <div className="flex items-center gap-[0.6rem] mb-[1.2rem]">
-            <div className="w-[0.4rem] h-[0.4rem] rounded-full bg-[#1846b3]" />
+            <div className="w-[0.4rem] h-[0.4rem] bg-[#1846b3]" />
 
             <p className="text-[0.95rem] font-[500] text-[#374151]">
               Contact us
             </p>
           </div>
 
-          <h1 className="font-[700] text-[#374151] max-w-[42rem]">
+          <h1 className="TextDarkGray max-w-[42rem]">
             Trusted Export Support Starts Here
           </h1>
 

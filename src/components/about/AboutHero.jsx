@@ -7,53 +7,55 @@ export default function AboutHero() {
   const sectionRef = useRef(null);
   const imageRef = useRef(null);
   const overlayRef = useRef(null);
-  const contentRef = useRef(null);
+  const line1Ref = useRef(null);
+  const line2Ref = useRef(null);
+  const eyebrowRef = useRef(null);
+  const paraRef = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Background Zoom Animation
+
+      /* 1. BG scale-in */
       gsap.fromTo(
         imageRef.current,
-        {
-          scale: 1.2,
-        },
-        {
-          scale: 1,
-          duration: 2,
-          ease: "power3.out",
-        }
+        { scale: 1.1 },
+        { scale: 1, duration: 2, ease: "power3.out" }
       );
 
-      // Overlay Fade
+      /* 2. Overlay fade */
       gsap.fromTo(
         overlayRef.current,
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 1.5,
-          ease: "power2.out",
-        }
+        { opacity: 0 },
+        { opacity: 1, duration: 1.5, ease: "power2.out" }
       );
 
-      // Content Animation
-      const elements = contentRef.current.children;
-
+      /* 3. Eyebrow slide + fade */
       gsap.fromTo(
-        elements,
+        eyebrowRef.current,
+        { opacity: 0, x: -20 },
+        { opacity: 1, x: 0, duration: 0.8, ease: "power3.out", delay: 0.5 }
+      );
+
+      /* 4. Heading lines clip-reveal (upward wipe) */
+      gsap.fromTo(
+        [line1Ref.current, line2Ref.current],
+        { yPercent: 110 },
         {
-          y: "6rem",
-          opacity: 0,
-        },
-        {
-          y: "0rem",
-          opacity: 1,
-          duration: 1.2,
-          stagger: 0.2,
-          ease: "power3.out",
+          yPercent: 0,
+          duration: 1.05,
+          ease: "power4.out",
+          stagger: 0.13,
+          delay: 0.7,
         }
       );
+
+      /* 5. Paragraph fade + rise */
+      gsap.fromTo(
+        paraRef.current,
+        { opacity: 0, y: 20 },
+        { opacity: 1, y: 0, duration: 0.85, ease: "power3.out", delay: 1.05 }
+      );
+
     }, sectionRef);
 
     return () => ctx.revert();
@@ -67,9 +69,9 @@ export default function AboutHero() {
       {/* Background Image */}
       <img
         ref={imageRef}
-        src={`/images/about/AboutHero.webp`}
+        src="/images/about/AboutHero.webp"
         alt="About Banner"
-        className="absolute inset-0 w-full h-full object-cover scale-[1.1]"
+        className="absolute inset-0 w-full h-full object-cover"
       />
 
       {/* Overlay */}
@@ -80,29 +82,40 @@ export default function AboutHero() {
 
       {/* Content */}
       <div className="relative z-10 w-[90vw] max-w-[90rem] mx-auto h-full flex items-center">
-        <div
-          ref={contentRef}
-          className="max-w-[48rem]"
-        >
-          {/* Small Heading */}
-          <div className="flex items-center gap-[0.6rem] mb-[1.5rem] opacity-0">
-            <div className="w-[0.4rem] h-[0.4rem] rounded-full bg-[#1846b3]" />
+        <div className="max-w-[52rem]">
 
-            <p className="text-white font-[500]">
-              About us
-            </p>
+          {/* Eyebrow */}
+          <div
+            ref={eyebrowRef}
+            className="flex items-center gap-[0.6rem] mb-[1.5rem]"
+          >
+            <div className="w-[0.4rem] h-[0.4rem] rounded-full bg-[#1846b3]" />
+            <p className="text-white font-[500] tracking-wide">About us</p>
           </div>
 
-          {/* Main Heading */}
-          <h1 className="text-white font-[700] max-w-[52rem] opacity-0">
-            International Drug Export Collaborator
+          {/* Main Heading — per-line clip reveal */}
+          <h1 className="text-white ">
+            <span className="block overflow-hidden">
+              <span ref={line1Ref} className="block will-change-transform">
+                International Drug
+              </span>
+            </span>
+            <span className="block overflow-hidden">
+              <span ref={line2Ref} className="block will-change-transform">
+                Export Collaborator
+              </span>
+            </span>
           </h1>
 
           {/* Description */}
-          <p className="text-white/90 mt-[2rem] max-w-[38rem] opacity-0">
+          <p
+            ref={paraRef}
+            className="text-white/90 mt-[2rem] max-w-[38rem]"
+          >
             Supplying high-quality APIs, excipients, and healthcare products
             to regulated and semi-regulated markets worldwide.
           </p>
+
         </div>
       </div>
     </section>

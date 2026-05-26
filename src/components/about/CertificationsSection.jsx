@@ -39,9 +39,9 @@ export default function CertificationsSection() {
       <div className="w-[90vw] max-w-[90rem] mx-auto">
         {/* Heading */}
         <div className="flex items-center justify-center mb-[5rem]">
-          <h2 className="text-[3rem] leading-[1.2] font-[700] text-[#374151] text-center">
+          <h1 className="text-[3rem] leading-[1.2]  text-[#374151] text-center">
             Reliable Quality Backed by Certifications
-          </h2>
+          </h1>
         </div>
 
         {/* Certification List */}
@@ -64,21 +64,21 @@ export default function CertificationsSection() {
 
               {/* Number */}
               <div>
-                <p className=" font-[700] text-[#374151]">
+                <p className="  TextDarkGray">
                   {item.id}
                 </p>
               </div>
 
               {/* Title */}
               <div>
-                <h2 className="font-[700] text-[#374151]">
+                <h2 className=" TextDarkGray">
                   {item.title}
                 </h2>
               </div>
 
               {/* Description */}
               <div>
-                <p className=" font-[400] TextLiteGray w-full">
+                <p className="  TextLiteGray w-full">
                   {item.description}
                 </p>
               </div>

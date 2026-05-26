@@ -88,11 +88,11 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[5vw] items-center">
           {/* Left Content */}
           <div className="max-w-[42rem]">
-            <h2 ref={headingRef} className="font-[700] text-[#374151]">
+            <h1 ref={headingRef} className=" TextDarkGray">
               About Indosol <br /> Exports
-            </h2>
+            </h1>
             <div className="mt-[3rem] flex flex-col gap-[2rem]">
-              <p ref={para1Ref} className="text-[#6b7280]">
+              <p ref={para1Ref} className="TextLiteGray">
                 Indosol Exports is a Mumbai-based pharmaceutical export company
                 specializing in APIs, excipients, intermediates, and allied
                 healthcare products. With more than two decades of international
@@ -100,7 +100,7 @@ export default function AboutSection() {
                 materials to customers across Asia, Africa, the Middle East,
                 Europe, and other international markets.
               </p>
-              <p ref={para2Ref} className="text-[#6b7280]">
+              <p ref={para2Ref} className="TextLiteGray">
                 By working alongside prominent Indian manufacturers and
                 preserving strong worldwide associations, the company delivers
                 reliable supply solutions with consistent quality, competitive

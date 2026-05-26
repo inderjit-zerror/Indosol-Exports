@@ -109,9 +109,9 @@ function AccordionItem({ item, index, isOpen, onToggle }) {
         className="w-full flex items-center justify-between py-[1.5rem] text-left group"
         aria-expanded={isOpen}
       >
-        <p className="text-white text-[1.15rem] font-semibold tracking-wide group-hover:text-white/80 transition-colors duration-200">
+        <h3 className="text-white text-[1.15rem]  tracking-wide group-hover:text-white/80 transition-colors duration-200">
           {item.title}
-        </p>
+        </h3>
 
         {/* Plus icon that rotates to ✕ */}
         <span
@@ -184,11 +184,11 @@ export default function InternationalHealthcareNetwork() {
 
         {/* Heading */}
         <div ref={headingRef} className="text-center mb-[3.5rem]">
-          <h2 className="text-[2.75rem] leading-[1.2] font-bold text-[#2E3748]">
+          <h1 className=" TextDarkGray">
             International Healthcare
             <br />
             Distribution Network
-          </h2>
+          </h1>
         </div>
 
         {/* Main Content */}

@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
-export default function ExportHero() {
+export default function ImportHero() {
   const sectionRef = useRef(null);
   const imageRef = useRef(null);
   const overlayRef = useRef(null);
@@ -69,7 +69,7 @@ export default function ExportHero() {
       {/* Background Image */}
       <img
         ref={imageRef}
-        src="/images/about/AboutHero.webp"
+        src={`/images/imports/i1.webp`}
         alt="Export Banner"
         className="absolute inset-0 w-full h-full object-cover"
       />
@@ -90,19 +90,19 @@ export default function ExportHero() {
             className="flex items-center gap-[0.6rem] mb-[1.5rem]"
           >
             <div className="w-[0.4rem] h-[0.4rem] rounded-full bg-[#1846b3]" />
-            <p className="text-white font-[500] tracking-wide">Exports</p>
+            <p className="text-white font-[500] tracking-wide">Imports</p>
           </div>
 
           {/* Main Heading — per-line clip reveal */}
           <h1 className="text-white">
             <span className="block overflow-hidden">
               <span ref={line1Ref} className="block will-change-transform">
-                Global Pharmaceutical
+                Universal Drug Sourcing
               </span>
             </span>
             <span className="block overflow-hidden">
               <span ref={line2Ref} className="block will-change-transform">
-                Export Solutions
+                & Procurement Solutions
               </span>
             </span>
           </h1>
@@ -112,8 +112,7 @@ export default function ExportHero() {
             ref={paraRef}
             className="text-white/90 mt-[2rem] max-w-[38rem]"
           >
-            Supplying pharmaceutical-grade APIs, excipients, and healthcare
-            products to regulated and semi-regulated markets worldwide.
+           Reliable sourcing and import support for APIs, excipients, intermediates, and pharmaceutical raw materials from trusted global manufacturers.
           </p>
 
         </div>

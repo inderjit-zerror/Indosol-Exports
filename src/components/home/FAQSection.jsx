@@ -143,11 +143,11 @@ export default function FAQSection() {
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-[3rem] mb-[4rem]">
 
           <div ref={headingRef} style={{ opacity: 0 }}>
-            <h2 className="text-[3.5rem] leading-[4rem] font-bold text-[#394150]">
+            <h1 className="text-[3.5rem] leading-[4rem] font-medium TextDarkGray">
               Frequently Asked
               <br />
               Questions
-            </h2>
+            </h1>
           </div>
 
           <button
@@ -155,7 +155,7 @@ export default function FAQSection() {
             className="flex items-center gap-[1rem] border border-[#d9dce3] rounded-full bg-white py-[0.4rem] pl-[1rem] pr-[0.5rem] duration-300"
             style={{ opacity: 0 }}
           >
-            <span className="text-[1rem] font-semibold text-[#394150]">
+            <span className="text-[1rem] TextDarkGray">
               Get In Touch
             </span>
             <div className="w-[2rem] h-[2rem] rounded-full bg-[#1450d2] flex items-center justify-center text-white text-[0.9rem]">
@@ -193,7 +193,7 @@ export default function FAQSection() {
                 className="w-full flex items-center justify-between gap-[2rem] py-[2rem] px-[2rem] text-left"
               >
                 <h3
-                  className={`text-[1.5rem] font-semibold duration-300 ${
+                  className={` font-medium duration-300 ${
                     activeIndex === index ? "TextBlue" : "TextDarkGray"
                   }`}
                 >
@@ -220,7 +220,7 @@ export default function FAQSection() {
                   ref={(el) => (innerRefs.current[index] = el)}
                   className="px-[2rem] pb-[2rem]"
                 >
-                  <p className="text-[1.1rem] leading-[2rem] text-[#7b8494] max-w-[55rem]">
+                  <p className=" TextLiteGray max-w-[55rem]">
                     {item.answer}
                   </p>
                 </div>

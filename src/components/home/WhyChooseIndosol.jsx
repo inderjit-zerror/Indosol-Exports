@@ -115,17 +115,17 @@ export default function WhyChooseIndosol() {
       <div className="w-[92vw] max-w-[90rem] mx-auto">
         {/* Heading */}
         <div className="text-center">
-          <h3
+          <h1
             ref={headingRef}
-            className="text-[2.3rem] leading-[2.3rem] font-bold text-[#374151]"
+            className="text-[2.3rem] leading-[2.3rem]  TextDarkGray"
             style={{ opacity: 0 }}
           >
             Why Choose Indosol
-          </h3>
+          </h1>
 
           <p
             ref={subheadingRef}
-            className="text-[#6b7280] mt-[1.2rem] max-w-[42rem] mx-auto"
+            className="TextLiteGray mt-[1.2rem] max-w-[42rem] mx-auto"
             style={{ opacity: 0 }}
           >
             Trusted pharmaceutical export solutions backed by quality,
@@ -156,7 +156,7 @@ export default function WhyChooseIndosol() {
                   <div className="w-full h-[0.08rem] bg-white/10 mt-[2rem]" />
                 </div>
                 <div className="mt-[2rem]">
-                  <h3 className="text-[1.4rem] leading-[1.4rem] font-semibold text-white">
+                  <h3 className="text-[1.4rem] leading-[1.4rem] font-medium  text-white">
                     Quality Assurance
                   </h3>
                   <span className="text-[1rem] leading-[1rem] flex text-[#dbe4ff] mt-[1rem]">
@@ -183,7 +183,7 @@ export default function WhyChooseIndosol() {
                   <div className="w-full h-[0.08rem] bg-[#e5e7eb] mt-[2rem]" />
                 </div>
                 <div className="mt-[2rem]">
-                  <h3 className="text-[1.4rem] font-semibold text-[#374151]">
+                  <h3 className="text-[1.4rem] font-medium TextDarkGray">
                     Regulatory Support
                   </h3>
                   <span className="text-[1rem] leading-[1rem] flex text-[#6b7280] mt-[1rem]">
@@ -209,7 +209,7 @@ export default function WhyChooseIndosol() {
                     className="w-1/2 h-1/2 object-cover object-center"
                   />
                 </div>
-                <h3 className="text-[1.4rem] leading-[1.4rem] font-semibold text-[#374151]">
+                <h3 className="font-medium TextDarkGray">
                   Wide Product Range
                 </h3>
               </div>
@@ -231,7 +231,7 @@ export default function WhyChooseIndosol() {
                   <div className="w-full h-[0.08rem] bg-white/10 mt-[2rem]" />
                 </div>
                 <div className="mt-[2rem]">
-                  <h3 className="text-[1.4rem] font-semibold text-white">
+                  <h3 className="font-medium  text-white">
                     Competitive Pricing
                   </h3>
                   <span className="text-[1rem] leading-[1.6rem] flex text-[#ffe4dd] mt-2">
@@ -254,7 +254,7 @@ export default function WhyChooseIndosol() {
                     className="w-1/2 h-1/2 object-cover object-center"
                   />
                 </div>
-                <h3 className="text-[1.4rem] font-semibold text-[#374151]">
+                <h3 className="font-medium TextDarkGray">
                   Global Reach
                 </h3>
               </div>

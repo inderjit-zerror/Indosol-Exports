@@ -106,12 +106,12 @@ export default function ServicesSection() {
           {/* Right Content */}
           <div className="w-full">
             {/* Heading */}
-            <h2
+            <h1
               ref={headingRef}
-              className="text-white text-[4rem] leading-[4.3rem] font-[700] max-w-[40rem]"
+              className="text-white  max-w-[40rem]"
             >
               Complete Pharmaceutical Export Solutions
-            </h2>
+            </h1>
 
             {/* Divider */}
             <div
@@ -136,9 +136,9 @@ export default function ServicesSection() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-[1.25rem] font-[500] text-white">
+                  <p className=" text-white">
                     {item.title}
-                  </h3>
+                  </p>
                 </div>
               ))}
             </div>

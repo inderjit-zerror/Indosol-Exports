@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function ExportAbout() {
+export default function ImportAbout() {
   const sectionRef = useRef(null);
   const headingRef = useRef(null);
   const para1Ref = useRef(null);
@@ -89,11 +89,11 @@ export default function ExportAbout() {
           {/* Left Content */}
           <div className="max-w-[42rem]">
             <h1 ref={headingRef} className=" text-[#374151]">
-              Delivering Pharmaceutical <br /> Products Worldwide  
+              Credible Global Medicine  <br /> Acquisition Partner 
             </h1>
             <div className="mt-[3rem] flex flex-col gap-[2rem]">
               <p ref={para1Ref} className="text-[#6b7280]">
-                Indosol Exports supplies APIs, excipients, intermediates, and allied healthcare products to customers across global regulated and semi-regulated markets. Backed by trusted Indian manufacturing partnerships and strong international logistics support, the company delivers reliable sourcing and export solutions tailored for global healthcare businesses.
+                Indosol Exports specializes in pharmaceutical sourcing and import support for APIs, excipients, intermediates, and allied healthcare products. With decades of international trade experience and strong manufacturer relationships, we help businesses streamline procurement, ensure regulatory compliance, and secure consistent product supply across global markets.
               </p>
               {/* <p ref={para2Ref} className="text-[#6b7280]">
                 By working alongside prominent Indian manufacturers and
@@ -109,7 +109,7 @@ export default function ExportAbout() {
             <div className="w-full overflow-hidden rounded-[1.2rem]">
               <img
                 ref={imageRef}
-                src={`/images/about/AboutAboutImg.webp`}
+                src={`/images/imports/i2.webp`}
                 alt="About Indosol Exports"
                 className="w-full h-[32rem] object-cover"
               />

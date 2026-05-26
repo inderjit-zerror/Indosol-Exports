@@ -87,15 +87,15 @@ export default function LeadershipSection() {
 
         {/* Left Content */}
         <div className="w-full lg:w-[30vw]">
-          <h2
+          <h1
             ref={headingRef}
-            className="font-bold text-[#2f3747]"
+            className="font-medium TextDarkGray"
             style={{ opacity: 0 }}
           >
             Leadership Behind
             <br />
             Our Success
-          </h2>
+          </h1>
 
           <p
             ref={descRef}
@@ -111,7 +111,7 @@ export default function LeadershipSection() {
             className="mt-[5rem] flex items-center gap-[1rem] bg-white border border-[#d9dce3] rounded-full py-[0.7rem] pl-[2rem] pr-[2rem] hover:shadow-md duration-300"
             style={{ opacity: 0 }}
           >
-            <span className="text-[1rem] font-semibold text-[#394150]">
+            <span className="text-[1rem] TextDarkGray">
               Learn More
             </span>
           </button>
@@ -141,10 +141,10 @@ export default function LeadershipSection() {
               {/* Content */}
               <div className="flex items-start justify-between mt-[1.5rem]">
                 <div>
-                  <h3 className="text-[1.3rem] font-semibold text-[#394150]">
+                  <h2 className="text-[1.3rem] font-medium TextDarkGray">
                     {member.name}
-                  </h3>
-                  <p className="text-[#7b8494] mt-[0.4rem]">{member.role}</p>
+                  </h2>
+                  <p className="TextLiteGray mt-[0.4rem]">{member.role}</p>
                 </div>
 
                 {/* Social Icons */}

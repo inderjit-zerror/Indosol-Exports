@@ -112,19 +112,19 @@ export default function MissionVisionSection() {
 
             {/* Right Content */}
             <div className="w-full">
-              <h2
+              <h1
                 ref={missionHeadingRef}
-                className="text-[4rem] leading-[4.2rem] font-[700] text-[#374151]"
+                className="  TextDarkGray"
               >
                 Our Mission
-              </h2>
+              </h1>
               <div
                 ref={missionDividerRef}
                 className="w-full h-[0.08rem] bg-[#dddddd] my-[2rem]"
               />
               <p
                 ref={missionParaRef}
-                className="text-[1.1rem] leading-[2.4rem] text-[#6b7280] max-w-[40rem]"
+                className=" TextLiteGray max-w-[40rem]"
               >
                 To furnish exceptional pharmaceutical products and dependable
                 sourcing approaches through trusted international partnerships,
@@ -140,19 +140,19 @@ export default function MissionVisionSection() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-[5vw] items-center">
             {/* Left Content */}
             <div className="w-full order-2 lg:order-1">
-              <h2
+              <h1
                 ref={visionHeadingRef}
-                className="text-[4rem] leading-[4.2rem] font-[700] text-[#374151]"
+                className="  TextDarkGray"
               >
                 Our Vision
-              </h2>
+              </h1>
               <div
                 ref={visionDividerRef}
                 className="w-full h-[0.08rem] bg-[#dddddd] my-[2rem]"
               />
               <p
                 ref={visionParaRef}
-                className="text-[1.1rem] leading-[2.4rem] text-[#6b7280] max-w-[40rem]"
+                className=" TextLiteGray max-w-[40rem]"
               >
                 To achieve global recognition as a pharmaceutical export
                 partner renowned for excellence, integrity, and enduring

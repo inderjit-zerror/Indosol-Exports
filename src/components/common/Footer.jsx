@@ -53,7 +53,7 @@ export default function Footer() {
             Company
           </h3>
 
-          <ul className="flex flex-col gap-[1.2rem] text-white/70 ">
+          <ul className="flex flex-col gap-2 text-white/70 ">
             <li>
               <a href="#" className="hover:text-white duration-300">
                <p> Home </p>
@@ -92,7 +92,7 @@ export default function Footer() {
             Utility
           </h3>
 
-          <ul className="flex flex-col gap-[1.2rem] text-white/70 ">
+          <ul className="flex flex-col gap-2 text-white/70 ">
             <li>
               <a href="#" className="hover:text-white duration-300">
                <p>  Contact </p>

@@ -156,13 +156,13 @@ export default function ProductsSection() {
       <div className="w-[90vw] mx-auto">
         {/* Heading */}
         <div className="flex items-start justify-between gap-[2rem] flex-wrap">
-          <h3
+          <h1
             ref={headingRef}
-            className="text-white text-[2rem] md:text-[2.5rem] font-semibold leading-[1.1]"
+            className="text-white "
             style={{ opacity: 0 }}
           >
             Products We <br /> Provide
-          </h3>
+          </h1>
 
           <button
             ref={btnRef}
@@ -193,7 +193,7 @@ export default function ProductsSection() {
                   <h3 className="text-white text-[2rem] md:text-[2.5rem] font-semibold">
                     {item.title}
                   </h3>
-                  <p className="text-white/70 mt-[1.5rem] max-w-[42rem]">
+                  <p className="text-white/70 mt-2 max-w-[42rem]">
                     {item.description}
                   </p>
                 </div>

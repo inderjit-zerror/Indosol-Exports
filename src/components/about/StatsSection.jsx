@@ -96,18 +96,18 @@ export default function StatsSection() {
                 <h1
                   data-count={numericPart}
                   data-suffix={suffixPart}
-                  className="text-[4.5rem] leading-[4.5rem] font-[700] text-[#1846b3]"
+                  className="text-[4.5rem] leading-[4.5rem] TextBlue"
                 >
                   0{suffixPart}
                 </h1>
 
                 {/* Title */}
-                <h3 className="text-[1.5rem] font-[700] text-[#374151] mt-5">
+                <h2 className="  TextDarkGray mt-5">
                   {item.title}
-                </h3>
+                </h2>
 
                 {/* Description */}
-                <p className="text-[1.05rem] leading-[2rem] text-[#6b7280] mt-[1.5rem] max-w-[22rem] mx-auto">
+                <p className=" TextLiteGray mt-[1.5rem] max-w-[22rem] mx-auto">
                   {item.description}
                 </p>
               </div>

@@ -115,28 +115,21 @@ export default function Header() {
     };
   }, []);
 
-
-  useLayoutEffect(()=>{
-    if(pathName == "/contact"){
-      gsap.set('.txt', {
-        color:'#0D40A2'
+  useLayoutEffect(() => {
+    if (pathName == "/contact") {
+      gsap.set(".txt", {
+        color: "#0D40A2",
+      });
+    } else {
+      gsap.set(".txt", {
+        color: "#ffffff",
       });
     }
-    else{
-      gsap.set('.txt', {
-        color:'#ffffff'
-      });
-    }
-      
-  })
+  });
 
   return (
-    <header
-      ref={headerRef}
-      className="w-full fixed top-0 left-0 z-[99]"
-    >
+    <header ref={headerRef} className="w-full fixed top-0 left-0 z-[99]">
       <div className="w-[92vw] max-w-[90rem] mx-auto h-[5.5rem] flex items-center justify-between">
-
         {/* Logo */}
         <div className="flex items-center">
           <img
@@ -148,58 +141,69 @@ export default function Header() {
 
         {/* Nav Links */}
         <nav className="hidden md:flex items-center gap-[3rem]">
-          <a
+          <Link
             href="/"
-            className="navLink text-[1.1rem] leading-[1.1rem] txt font-medium text-white"
+            className="navLink group relative text-[1.1rem] leading-[1.1rem] txt font-medium text-white"
           >
-            Home
-          </a>
+            <p>Home</p>
 
-          <a
+            {/* Underline */}
+            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-current transition-all duration-300 ease-out group-hover:w-full"></span>
+          </Link>
+
+          <Link
             href="/about"
-            className="navLink text-[1.1rem] leading-[1.1rem] txt font-medium text-white"
+            className="navLink group relative text-[1.1rem] leading-[1.1rem] txt font-medium text-white"
           >
-            About us
-          </a>
+            <p>About us</p>
 
-          <a
-            href="/"
-            className="navLink text-[1.1rem] leading-[1.1rem] txt font-medium text-white"
+            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-current transition-all duration-300 ease-out group-hover:w-full"></span>
+          </Link>
+
+          <Link
+            href="#"
+            className="navLink group relative text-[1.1rem] leading-[1.1rem] txt font-medium text-white"
           >
-            Products
-          </a>
+            <p>Products</p>
 
-          <a
-            href="/"
-            className="navLink text-[1.1rem] leading-[1.1rem] txt font-medium text-white"
+            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-current transition-all duration-300 ease-out group-hover:w-full"></span>
+          </Link>
+
+          <Link
+            href="/imports"
+            className="navLink group relative text-[1.1rem] leading-[1.1rem] txt font-medium text-white"
           >
-            Imports
-          </a>
+            <p>Imports</p>
 
-          <a
+            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-current transition-all duration-300 ease-out group-hover:w-full"></span>
+          </Link>
+
+          <Link
             href="/exports"
-            className="navLink text-[1.1rem] leading-[1.1rem] txt font-medium text-white"
+            className="navLink group relative text-[1.1rem] leading-[1.1rem] txt font-medium text-white"
           >
-            Exports
-          </a>
+            <p>Exports</p>
+
+            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-current transition-all duration-300 ease-out group-hover:w-full"></span>
+          </Link>
         </nav>
 
         {/* Button */}
         <div className="flex items-center">
-          <Link href="/contact" > 
-          <button
-            ref={buttonRef}
-            className="flex items-center gap-[0.8rem] NavBTBN bg-white text-[#0D40A2] font-semibold rounded-full pl-[1rem] pr-[0.3rem] py-[0.3rem] overflow-hidden"
-          >
-            Contact Us
-
-            <span
-              ref={circleRef}
-              className="w-[2rem] h-[2rem] rounded-full BTNinnerCrl bg-[#0D40A2] flex items-center justify-center text-white"
+          <Link href="/contact">
+            <button
+              ref={buttonRef}
+              className="flex items-center gap-[0.8rem] NavBTBN bg-white text-[#0D40A2] rounded-full pl-[1rem] pr-[0.3rem] py-[0.3rem] overflow-hidden"
             >
-              <FaArrowRight />
-            </span>
-          </button>
+              <p>Contact Us</p>
+
+              <span
+                ref={circleRef}
+                className="w-[1.7rem] h-[1.7rem] text-[0.8rem] rounded-full BTNinnerCrl bg-[#0D40A2] flex items-center justify-center text-white"
+              >
+                <FaArrowRight />
+              </span>
+            </button>
           </Link>
         </div>
       </div>

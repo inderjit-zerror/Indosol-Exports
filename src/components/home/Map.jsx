@@ -25,12 +25,12 @@ const Map = () => {
   }, []);
   return (
     <div className="w-full MapTopMainCont h-screen bg-white px-[10%] relative">
-      <div className="w-full h-fit flex justify-center font-semibold items-center text-center text-[#202020] relative z-10">
+      <div className="w-full h-fit flex justify-center items-center text-center relative z-10">
         
-        <h2>
+        <h1 className="TextDarkGray">
           Serving clients across <br /> Asia, Europe, Middle East, <br /> and
           beyond
-        </h2>
+        </h1>
       </div>
 
       <div className="w-full h-full absolute top-0 left-0 flex justify-center items-center pb-[5vh] z-1 ">
