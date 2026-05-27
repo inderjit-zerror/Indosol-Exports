@@ -161,7 +161,7 @@ export default function Header() {
           </Link>
 
           <Link
-            href="#"
+            href="/products"
             className="navLink group relative text-[1.1rem] leading-[1.1rem] txt font-medium text-white"
           >
             <p>Products</p>
