@@ -82,7 +82,7 @@ export default function LeadershipSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="w-full bg-[#f5f5f5] py-[6rem]">
+    <section ref={sectionRef} className="w-full bg-[#f5f5f5] py-[6rem] overflow-hidden">
       <div className="max-w-[90vw] mx-auto flex flex-col lg:flex-row items-start justify-between gap-[5rem]">
 
         {/* Left Content */}

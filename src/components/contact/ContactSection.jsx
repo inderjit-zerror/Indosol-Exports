@@ -121,7 +121,7 @@ export default function ContactSection() {
   return (
     <section
       ref={sectionRef}
-      className="w-full bg-[#f4f4f4] py-[6rem] pt-[10vw] overflow-hidden"
+      className="w-full bg-[#f4f4f4] py-[6rem] pt-[10vw] overflow-hidden max-sm:pt-[15vh]"
     >
       <div className="w-[90vw] max-w-[90rem] mx-auto">
         {/* Top Content */}

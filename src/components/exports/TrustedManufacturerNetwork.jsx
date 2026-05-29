@@ -323,7 +323,7 @@ export default function TrustedManufacturerNetwork() {
     ));
 
   return (
-    <section ref={sectionRef} className="w-full bg-[#ffffff] py-[6rem]">
+    <section ref={sectionRef} className="w-full bg-[#ffffff] py-[6rem] overflow-hidden">
       <div className="w-[90vw] max-w-[90rem] mx-auto">
 
         {/* Top Section */}

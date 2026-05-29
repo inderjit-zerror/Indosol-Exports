@@ -179,7 +179,7 @@ export default function InternationalHealthcareNetwork() {
   };
 
   return (
-    <section ref={sectionRef} className="w-full bg-[#F8F8F8] py-[6rem]">
+    <section ref={sectionRef} className="w-full bg-[#F8F8F8] py-[6rem] overflow-hidden">
       <div className="w-[90vw] max-w-[80rem] mx-auto">
 
         {/* Heading */}

@@ -145,7 +145,7 @@ export default function RegulatoryCompliance() {
     ));
 
   return (
-    <section ref={sectionRef} className="w-full bg-[#f5f5f5] py-[6rem]">
+    <section ref={sectionRef} className="w-full bg-[#f5f5f5] py-[6rem] overflow-hidden">
       <div className="w-[90vw] max-w-[90rem] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-[4rem] items-center">
 

@@ -77,7 +77,7 @@ export default function StatsSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="w-full bg-[#ffffff] py-[2vw] pb-[8vw]">
+    <section ref={sectionRef} className="w-full bg-[#ffffff] py-[2vw] pb-[8vw] overflow-hidden">
       <div className="w-[90vw] max-w-[90rem] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 border-l border-r border-[#dddddd]">
           {statsData.map((item, index) => {

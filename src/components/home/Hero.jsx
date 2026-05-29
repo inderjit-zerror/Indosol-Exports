@@ -165,15 +165,19 @@ export default function Hero() {
       {/* Background Image */}
       <div
         ref={bgRef}
-        className="absolute inset-0 w-full h-full will-change-transform"
+        className="absolute inset-0 w-full h-full will-change-transform overflow-hidden"
       >
-        <Image
+
+        <video src={`/random_video/5.mp4`} loop muted autoPlay 
+         className="w-full h-full object-cover object-center"
+        ></video>
+        {/* <Image
           src="/images/Home/HomeHeroImgBG.webp"
           alt="Molecular structure background"
           fill
           priority
           className="object-cover object-center"
-        />
+        /> */}
       </div>
 
       {/* Overlay — separate ref so it parallaxes at a different depth */}
@@ -210,7 +214,7 @@ export default function Hero() {
         {/* Subtext */}
         <p
           ref={paraRef}
-          className="text-white/75 font-light max-w-[35vw] mb-8 mt-2 will-change-transform"
+          className="text-white/75 font-light sm:max-w-[35vw] mb-8 mt-2 will-change-transform"
         >
           Your trusted Indian partner for compliant, high-quality pharmaceutical
           supplies delivered to markets worldwide.

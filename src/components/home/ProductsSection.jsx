@@ -32,7 +32,7 @@ export default function ProductsSection() {
         "Paracetamol BP",
         "Albendazole USP",
       ],
-      image: "/images/Home/HomeHeroImgBG.webp",
+      image: "/random_video/4.mp4",
     },
     {
       title: "Excipients",
@@ -46,7 +46,7 @@ export default function ProductsSection() {
         "Liquid Glucose",
         "Sodium Starch Glycolate",
       ],
-      image: "/images/Home/Img2Home.webp",
+      image: "/random_video/3.mp4",
     },
     {
       title: "Packaging Material",
@@ -59,7 +59,7 @@ export default function ProductsSection() {
         "Plastic spoons / droppers",
         "PVC",
       ],
-      image: "/images/Home/HomeHeroImgBG.webp",
+      image: "/random_video/5.mp4",
     },
   ];
 
@@ -152,7 +152,7 @@ export default function ProductsSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="w-full bg-[#082661] py-[6rem]">
+    <section ref={sectionRef} className="w-full bg-[#082661] py-[6rem] overflow-hidden">
       <div className="w-[90vw] mx-auto">
         {/* Heading */}
         <div className="flex items-start justify-between gap-[2rem] flex-wrap">
@@ -218,14 +218,15 @@ export default function ProductsSection() {
                 style={{ opacity: 0, willChange: "transform" }}
               >
                 <div className="relative w-full rounded-[1.8rem] overflow-hidden group">
-                  <img
+                  <video
+                   loop autoPlay muted
                     src={item.image}
                     alt={item.title}
                     className="w-full h-full object-cover duration-500 group-hover:scale-105"
                   />
-                  <button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[4.5rem] h-[4.5rem] rounded-full bg-white text-[#06256F] text-[1.5rem] flex items-center justify-center duration-300 hover:scale-110">
+                  {/* <button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[4.5rem] h-[4.5rem] rounded-full bg-white text-[#06256F] text-[1.5rem] flex items-center justify-center duration-300 hover:scale-110">
                     <FaArrowRight/>
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>

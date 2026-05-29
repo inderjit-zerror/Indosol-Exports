@@ -67,12 +67,15 @@ export default function ProjectHome() {
       className="w-full h-screen relative overflow-hidden"
     >
       {/* Background Image */}
-      <img
+      {/* <img
         ref={imageRef}
         src={`/images/projects/ProjectHome.webp`}
         alt="Export Banner"
         className="absolute inset-0 w-full h-full object-cover"
-      />
+      /> */}
+      <video src={`/random_video/1.mp4`} loop muted autoPlay 
+         className="w-full h-full object-cover inset-0 top-0 left-0  absolute object-center"
+        ></video>
 
       {/* Overlay */}
       <div

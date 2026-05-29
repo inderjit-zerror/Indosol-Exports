@@ -9,15 +9,15 @@ import { createPageMetadata } from "@/lib/seo";
 
 const AboutPage = () => {
   return (
-    <div>
-    <AboutHero/>
+    <>
+    <AboutHero />
     <AboutSection/>
     <StatsSection/>
     <MissionVisionSection/>
     <ServicesSection />
     <LeadershipSection />
     <CertificationsSection />
-    </div>
+    </>
   );
 };
 

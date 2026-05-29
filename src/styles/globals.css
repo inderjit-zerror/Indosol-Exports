@@ -5,8 +5,9 @@
   user-select: none;
 }
 body {
-  overflow-x: hidden;
+  overflow: hidden;
   width: 100%;
+  position: relative;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -39,46 +40,52 @@ button {
   height: 100vh !important;
   height: 100svh !important;
 }
-.container{
+.container {
   max-width: 1440px;
   margin-inline: auto;
 }
 
-
 /* =============================== */
 
-.TextBlue{
-  color: #0D40A2;
+.TextBlue {
+  color: #0d40a2;
 }
-.TextDarkGray{
-  color:#374151;
+.TextDarkGray {
+  color: #374151;
 }
-.TextLiteGray{
-  color:#6B7280;
+.TextLiteGray {
+  color: #6b7280;
 }
-.BgBlue{
-  background-color: #0D40A2;
+.BgBlue {
+  background-color: #0d40a2;
 }
-
 
 /* ================================ */
 
-h1{
+h1 {
   font-size: 3vw;
   line-height: 3.5vw;
 }
 
-p{
+p {
   font-size: 1rem;
   line-height: 1.2rem;
 }
 
-h2{
+h2 {
   font-size: 1.5rem;
   line-height: 1.9rem;
 }
 
-h3{
+h3 {
   font-size: 1.4rem;
   line-height: 1.9rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
 }

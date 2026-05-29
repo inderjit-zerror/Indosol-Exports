@@ -33,7 +33,7 @@ export default function ImportCapabilities() {
   ];
 
   return (
-    <section className="w-full bg-[#f5f5f5] py-[6rem]">
+    <section className="w-full bg-[#f5f5f5] py-[6rem] overflow-hidden">
       <div className="w-[90vw] mx-auto">
         {/* Heading */}
         <div className="flex flex-col items-center justify-center text-center">

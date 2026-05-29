@@ -35,7 +35,7 @@ export default function CertificationsSection() {
   ];
 
   return (
-    <section className="w-full bg-[#f5f5f5] py-[6rem]">
+    <section className="w-full bg-[#f5f5f5] py-[6rem] overflow-hidden">
       <div className="w-[90vw] max-w-[90rem] mx-auto">
         {/* Heading */}
         <div className="flex items-center justify-center mb-[5rem]">

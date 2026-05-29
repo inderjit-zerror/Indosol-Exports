@@ -95,7 +95,7 @@ export default function MissionVisionSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="w-full bg-[#f4f4f4] py-[7rem]">
+    <section ref={sectionRef} className="w-full bg-[#f4f4f4] py-[7rem] overflow-hidden">
       <div className="w-[90vw] max-w-[90rem] mx-auto">
         <div className="flex flex-col gap-[5rem]">
 

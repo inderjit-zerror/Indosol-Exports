@@ -83,7 +83,7 @@ export default function ExportAbout() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="w-full bg-[#ffffff] py-[7rem]">
+    <section ref={sectionRef} className="w-full bg-[#ffffff] py-[7rem] overflow-hidden">
       <div className="w-[90vw] max-w-[90rem] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[5vw] items-center">
           {/* Left Content */}

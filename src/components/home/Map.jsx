@@ -24,7 +24,7 @@ const Map = () => {
     );
   }, []);
   return (
-    <div className="w-full MapTopMainCont h-screen bg-white px-[10%] relative">
+    <div className="w-full MapTopMainCont h-screen bg-white px-[10%] relative overflow-hidden">
       <div className="w-full h-fit flex justify-center items-center text-center relative z-10">
         
         <h1 className="TextDarkGray">

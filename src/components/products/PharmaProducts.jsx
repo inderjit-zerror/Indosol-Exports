@@ -85,7 +85,7 @@ export default function PharmaProducts() {
   }, [activeIndex]);
 
   return (
-    <section className="w-full bg-[#ffffff] py-[7rem]">
+    <section className="w-full bg-[#ffffff] py-[7rem] ">
       <div className="w-[90vw] mx-auto">
 
         {/* Heading */}
@@ -129,7 +129,7 @@ export default function PharmaProducts() {
                   ref={(el) => (contentRefs.current[index] = el)}
                   className="overflow-hidden h-0 opacity-0"
                 >
-                  <div className="px-[3rem] pb-[3rem]">
+                  <div className="px-[3rem] pb-[3rem] max-sm:px-[0px]">
 
                     {/* Table Wrapper */}
                     <div className="border border-[#d9d9d9] rounded-[1.5rem] overflow-hidden bg-white">
