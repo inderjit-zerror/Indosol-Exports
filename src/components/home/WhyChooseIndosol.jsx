@@ -177,7 +177,7 @@ export default function WhyChooseIndosol() {
   return (
     <section
       ref={sectionRef}
-      className="w-full bg-white py-[10vw] flex justify-center items-center overflow-hidden"
+      className="w-full bg-white py-[10vw] max-sm:py-[10vh] flex justify-center items-center overflow-hidden"
     >
       <div className="w-[92vw] max-w-[90rem] mx-auto">
         {/* HEADING */}
