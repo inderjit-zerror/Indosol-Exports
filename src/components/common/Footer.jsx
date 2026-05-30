@@ -53,27 +53,27 @@ export default function Footer() {
 
           <ul className="flex flex-col gap-2 text-white/70 items-center md:items-start">
             <li>
-              <a href="#" className="hover:text-white duration-300">
+              <a href="/" className="hover:text-white duration-300">
                 <p>Home</p>
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white duration-300">
+              <a href="/about" className="hover:text-white duration-300">
                 <p>About us</p>
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white duration-300">
+              <a href="/products" className="hover:text-white duration-300">
                 <p>Products</p>
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white duration-300">
+              <a href="/imports" className="hover:text-white duration-300">
                 <p>Imports</p>
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white duration-300">
+              <a href="/exports" className="hover:text-white duration-300">
                 <p>Exports</p>
               </a>
             </li>
@@ -86,7 +86,7 @@ export default function Footer() {
 
           <ul className="flex flex-col gap-2 text-white/70 items-center md:items-start">
             <li>
-              <a href="#" className="hover:text-white duration-300">
+              <a href="/contact" className="hover:text-white duration-300">
                 <p>Contact</p>
               </a>
             </li>
